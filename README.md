@@ -9,7 +9,7 @@ Just a test for laravel package development
 ## Installation
 
 ```shell
-$ composer require "song/packagetest:dev-master" 
+$ composer require song/packagetest:dev-master
 ```
 
 
