@@ -1,0 +1,15 @@
+{
+    "name": "song/packagetest",
+    "authors": [
+        {
+            "name": "宋慧杰",
+            "email": "songhuijie@haichuang.pro"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Song\\Packagetest\\": "src/"
+        }
+    }
+}
