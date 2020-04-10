@@ -18,15 +18,7 @@ Publishing resources
 ```shell
 php artisan vendor:publish --provider="Song\Packagetest\PackagetestServiceProvider"
 ```
-Need to add in `config.app` 
-`providers`
-```shell
-Song\Packagetest\PackagetestServiceProvider::class
-```
-`aliases`
-```shell
-'Packagetest' => Song\Packagetest\Facades\Packagetest::class
-```
+
 **example of case**
 ```shell
 return view('Packagetest::packagetest',['msg'=>Packagetest::test_rtn('Test')]);
