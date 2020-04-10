@@ -11,5 +11,16 @@
         "psr-4": {
             "Song\\Packagetest\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Song\\Packagetest\\PackagetestServiceProvider"
+            ],
+            "aliases": {
+                "Admin": "Song\\Packagetest\\Facades\\Packagetest"
+            }
+
+        }
     }
 }
