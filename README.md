@@ -9,7 +9,27 @@ Just a test for laravel package development
 ## Installation
 
 ```shell
-$ composer require "aex/packagetest-for-laravel:dev-master" -vvv
+$ composer require "song/packagetest-for-laravel:dev-master" -
+```
+
+
+Publishing resources
+
+```shell
+php artisan vendor:publish --provider="Song\Packagetest\PackagetestServiceProvider"
+```
+Need to add in `config.app` 
+`providers`
+```shell
+Illuminate\View\ViewServiceProvider::class
+```
+`aliases`
+```shell
+'Packagetest' => Song\Packagetest\Facades\Packagetest::class
+```
+**example of case**
+```shell
+return view('Packagetest::packagetest',['msg'=>Packagetest::test_rtn('Test')]);
 ```
 
 ## Documentation
