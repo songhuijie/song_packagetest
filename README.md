@@ -21,7 +21,7 @@ php artisan vendor:publish --provider="Song\Packagetest\PackagetestServiceProvid
 Need to add in `config.app` 
 `providers`
 ```shell
-Illuminate\View\ViewServiceProvider::class
+Song\Packagetest\PackagetestServiceProvider::class
 ```
 `aliases`
 ```shell
